@@ -8,6 +8,12 @@ public interface Luminosita {
 
 	}
 
+	public static String show(int luminosita) {
+
+		return " " + stampaLum(luminosita);
+
+	}
+
 	public static String stampaLum(int luminosita) {
 		String strLum = "";
 		for (int i = 0; i < luminosita; i++) {

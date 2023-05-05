@@ -9,6 +9,14 @@ public interface Riproducibile {
 
 	}
 
+	public static void play(int durata, String title, int volume, String luminosita) {
+
+		for (int i = 0; i < durata; i++) {
+			System.out.println(title + " " + stampaVol(volume) + luminosita);
+		}
+
+	}
+
 	private static String stampaVol(int volume) {
 		String strVol = "";
 		for (int i = 0; i < volume; i++) {
