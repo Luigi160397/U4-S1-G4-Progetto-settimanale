@@ -1,26 +1,20 @@
 package application;
 
-import application.media.Audio;
-import application.media.Immagine;
-import application.media.Luminosita;
-import application.media.Riproducibile;
-import application.media.Video;
-
 public class Main {
 
 	public static void main(String[] args) {
-		Immagine imm1 = new Immagine("immagine", "nature", 10);
-		Luminosita.show(imm1.getTitolo(), imm1.getLuminosita());
-
-		Audio song = new Audio("audio", "queen", 5);
-
-		song.setVolume(30);
-		Riproducibile.play(song.getDurata(), song.getTitolo(), song.getVolume());
-
-		Video video1 = new Video("video", "avatar", 10, 20);
-
-		Riproducibile.play(video1.getDurata(), video1.getTitolo(), video1.getVolume(),
-				Luminosita.show(video1.getLuminosita()));
+//		Immagine imm1 = new Immagine("immagine", "nature", 10);
+//		Luminosita.show(imm1.getTitolo(), imm1.getLuminosita());
+//
+//		Audio song = new Audio("audio", "queen", 5);
+//
+//		song.setVolume(30);
+//		Riproducibile.play(song.getDurata(), song.getTitolo(), song.getVolume());
+//
+//		Video video1 = new Video("video", "avatar", 10, 20);
+//
+//		Riproducibile.play(video1.getDurata(), video1.getTitolo(), video1.getVolume(),
+//				Luminosita.show(video1.getLuminosita()));
 
 		/*
 		 * scanner
