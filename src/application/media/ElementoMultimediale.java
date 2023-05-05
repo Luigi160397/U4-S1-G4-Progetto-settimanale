@@ -3,11 +3,13 @@ package application.media;
 public abstract class ElementoMultimediale {
 	private String tipoFile;
 	private String titolo;
+	private boolean riproducibile;
 
-	public ElementoMultimediale(String tipoFile, String titolo) {
+	public ElementoMultimediale(String tipoFile, String titolo, boolean riproducibile) {
 
 		setTipoFile(tipoFile);
 		setTitolo(titolo);
+		setRiproducibile(riproducibile);
 	}
 
 	public String getTipoFile() {
@@ -24,6 +26,14 @@ public abstract class ElementoMultimediale {
 
 	public void setTitolo(String titolo) {
 		this.titolo = titolo;
+	}
+
+	public boolean isRiproducibile() {
+		return riproducibile;
+	}
+
+	public void setRiproducibile(boolean riproducibile) {
+		this.riproducibile = riproducibile;
 	}
 
 }
