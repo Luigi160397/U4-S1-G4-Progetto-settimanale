@@ -9,11 +9,11 @@ public interface Luminosita {
 	}
 
 	public static String stampaLum(int luminosita) {
-		String strVol = "*";
+		String strLum = "";
 		for (int i = 0; i < luminosita; i++) {
-			strVol += strVol;
+			strLum += "*";
 		}
-		return strVol;
+		return strLum;
 	}
 
 	public static void alzaLuminosita() {

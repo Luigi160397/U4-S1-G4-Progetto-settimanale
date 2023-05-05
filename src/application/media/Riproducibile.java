@@ -10,9 +10,9 @@ public interface Riproducibile {
 	}
 
 	private static String stampaVol(int volume) {
-		String strVol = "!";
+		String strVol = "";
 		for (int i = 0; i < volume; i++) {
-			strVol += strVol;
+			strVol += "!";
 		}
 		return strVol;
 	}
