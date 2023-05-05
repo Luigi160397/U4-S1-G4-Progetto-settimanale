@@ -21,4 +21,9 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
 		this.luminosita = luminosita;
 	}
 
+	@Override
+	public void esegui() {
+		Luminosita.show(getTitolo(), getLuminosita());
+	};
+
 }

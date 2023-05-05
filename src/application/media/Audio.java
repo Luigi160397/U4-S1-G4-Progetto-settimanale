@@ -32,4 +32,9 @@ public class Audio extends ElementoMultimediale implements Riproducibile {
 		this.durata = durata;
 	}
 
+	@Override
+	public void esegui() {
+		Riproducibile.play(getDurata(), getTitolo(), getVolume());
+	};
+
 }

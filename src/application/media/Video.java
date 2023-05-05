@@ -49,4 +49,9 @@ public class Video extends ElementoMultimediale implements Riproducibile, Lumino
 		this.luminosita = luminosita;
 	}
 
+	@Override
+	public void esegui() {
+		Riproducibile.play(getDurata(), getTitolo(), getVolume(), Luminosita.show(getLuminosita()));
+	};
+
 }
