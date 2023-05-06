@@ -23,25 +23,31 @@ public class Main {
 			if (mediaType.equalsIgnoreCase("video")) {
 				System.out.println("Inserisci il titolo del " + (i + 1) + "° video");
 				String mediaTitle = multimediaScan.nextLine();
-				Video video = new Video(mediaType, mediaTitle);
+				System.out.println("Inserisci la durata del " + (i + 1) + "° video");
+				int mediaDuration = multimediaScan.nextInt();
+				System.out.println("Inserisci la luminosità del " + (i + 1) + "° video");
+				int mediaBrightness = multimediaScan.nextInt();
+				Video video = new Video(mediaType, mediaTitle, mediaDuration, mediaBrightness);
 				medias[i] = video;
 			} else if (mediaType.equalsIgnoreCase("audio")) {
 				System.out.println("Inserisci il titolo del " + (i + 1) + "° audio");
 				String mediaTitle = multimediaScan.nextLine();
-				Audio audio = new Audio(mediaType, mediaTitle);
+				System.out.println("Inserisci la durata del " + (i + 1) + "° audio");
+				int mediaDuration = multimediaScan.nextInt();
+				Audio audio = new Audio(mediaType, mediaTitle, mediaDuration);
 				medias[i] = audio;
 			} else if (mediaType.equalsIgnoreCase("immagine")) {
 				System.out.println("Inserisci il titolo della " + (i + 1) + "° immagine");
 				String mediaTitle = multimediaScan.nextLine();
-				Immagine immagine = new Immagine(mediaType, mediaTitle);
+				System.out.println("Inserisci la luminosità della " + (i + 1) + "° immagine");
+				int mediaBrightness = multimediaScan.nextInt();
+				Immagine immagine = new Immagine(mediaType, mediaTitle, mediaBrightness);
 				medias[i] = immagine;
 			} else {
 				System.out.println("File non supportato!");
 				i--;
 			}
 		}
-
-		System.out.println(medias[2].getTitolo());
 
 		int choice = -1;
 		while (choice != 0) {
