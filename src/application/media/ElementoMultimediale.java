@@ -12,8 +12,7 @@ public abstract class ElementoMultimediale {
 		setRiproducibile(riproducibile);
 	}
 
-	public void esegui() {
-	};
+	public abstract void esegui();
 
 	public String getTipoFile() {
 		return tipoFile;
