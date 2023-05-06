@@ -27,20 +27,27 @@ public class Main {
 				int mediaDuration = multimediaScan.nextInt();
 				System.out.println("Inserisci la luminosità del " + (i + 1) + "° video");
 				int mediaBrightness = multimediaScan.nextInt();
-				Video video = new Video(mediaType, mediaTitle, mediaDuration, mediaBrightness);
+				System.out.println("Inserisci il volume del " + (i + 1) + "° video");
+				int mediaVolume = multimediaScan.nextInt();
+				multimediaScan.nextLine();
+				Video video = new Video(mediaType, mediaTitle, mediaDuration, mediaBrightness, mediaVolume);
 				medias[i] = video;
 			} else if (mediaType.equalsIgnoreCase("audio")) {
 				System.out.println("Inserisci il titolo del " + (i + 1) + "° audio");
 				String mediaTitle = multimediaScan.nextLine();
 				System.out.println("Inserisci la durata del " + (i + 1) + "° audio");
 				int mediaDuration = multimediaScan.nextInt();
-				Audio audio = new Audio(mediaType, mediaTitle, mediaDuration);
+				System.out.println("Inserisci il volume del " + (i + 1) + "° audio");
+				int mediaVolume = multimediaScan.nextInt();
+				multimediaScan.nextLine();
+				Audio audio = new Audio(mediaType, mediaTitle, mediaDuration, mediaVolume);
 				medias[i] = audio;
 			} else if (mediaType.equalsIgnoreCase("immagine")) {
 				System.out.println("Inserisci il titolo della " + (i + 1) + "° immagine");
 				String mediaTitle = multimediaScan.nextLine();
 				System.out.println("Inserisci la luminosità della " + (i + 1) + "° immagine");
 				int mediaBrightness = multimediaScan.nextInt();
+				multimediaScan.nextLine();
 				Immagine immagine = new Immagine(mediaType, mediaTitle, mediaBrightness);
 				medias[i] = immagine;
 			} else {
